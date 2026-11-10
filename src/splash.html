@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap">
+<style>
+*{margin:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#0b0610;font-family:'Montserrat','Segoe UI',system-ui,sans-serif;-webkit-app-region:drag;user-select:none}
+body{display:grid;place-items:center;background:radial-gradient(520px 260px at 50% 55%,#2a1236 0,#0b0610 72%)}
+.mark{color:#fff;animation:fade 2.9s ease both}
+h1{font-weight:800;font-size:76px;line-height:.95;letter-spacing:.06em;animation:track 2.2s cubic-bezier(.2,.7,.2,1) both}
+h2{font-weight:300;font-size:50px;line-height:1.05;letter-spacing:.2em;margin-top:2px;color:#f3e9f8;animation:track 2.2s .12s cubic-bezier(.2,.7,.2,1) both}
+.line{display:block;height:3px;width:100%;margin-top:18px;background:linear-gradient(90deg,#ffc53d,#ff6a1f,#e0338c);transform-origin:left;animation:draw 1.4s .5s cubic-bezier(.6,0,.2,1) both}
+@keyframes track{from{letter-spacing:.5em;opacity:0}to{opacity:1}}
+@keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes fade{0%,82%{opacity:1}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01s!important}}
+</style></head>
+<body><div class="mark"><h1>SAREX</h1><h2>STUDIO</h2><i class="line"></i></div></body></html>
